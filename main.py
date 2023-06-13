@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 app = FastAPI()
 
-df = pd.read_csv('C:\Fabrizzio\HENRY CURSO\FastApi\HenryLabs.csv')
+df = pd.read_csv('C:\Fabrizzio\HENRY CURSO\Project\HenryLabs.csv')
 df['release_date'].fillna('', inplace=True)
 df['release_date'] = df['release_date'].astype(str)
 
