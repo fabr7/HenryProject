@@ -13,6 +13,9 @@ df['release_date'] = df['release_date'].astype(str)
 
 ml_df = pd.read_csv('VariablesML.csv')
 
+@app.get('/')
+def saludo(): 
+    return 'Hola a todos'
 
 @app.get('/cantidad_filmaciones_mes/{mes}')
 def cantidad_filmaciones_mes(mes: str):
